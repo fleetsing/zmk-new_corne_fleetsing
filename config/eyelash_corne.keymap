@@ -113,24 +113,34 @@
             key-positions = <8 9>;
         };
 
-        dollar {
-            bindings = <&kp LA(NUMBER_4)>;
+        left_brace {
+            bindings = <&kp LA(LS(N8))>;
             key-positions = <4 5>;
         };
 
-        euro {
-            bindings = <&kp LS(NUMBER_4)>;
+        right_brace {
+            bindings = <&kp LS(LA(N9))>;
             key-positions = <8 7>;
         };
 
-        hash {
-            bindings = <&kp LS(NUMBER_3)>;
+        left_parenthesis {
+            bindings = <&kp LS(N8)>;
             key-positions = <17 18>;
         };
 
-        asterisk {
-            bindings = <&kp LS(APOSTROPHE)>;
+        right_parenthesis {
+            bindings = <&kp LS(N9)>;
             key-positions = <22 23>;
+        };
+
+        left_bracket {
+            bindings = <&kp LA(N8)>;
+            key-positions = <32 33>;
+        };
+
+        right_bracket {
+            bindings = <&kp LA(N9)>;
+            key-positions = <36 37>;
         };
     };
 
