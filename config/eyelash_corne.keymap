@@ -142,6 +142,56 @@
             bindings = <&kp LA(N7)>;
             key-positions = <25 39>;
         };
+
+        caret {
+            bindings = <&kp LS(LA(RIGHT_BRACKET))>;
+            key-positions = <7 22>;
+        };
+
+        underscore {
+            bindings = <&kp LS(SLASH)>;
+            key-positions = <22 36>;
+        };
+
+        percent {
+            bindings = <&kp LS(N5)>;
+            key-positions = <5 18>;
+        };
+
+        tilde {
+            bindings = <&kp LA(RIGHT_BRACKET)>;
+            key-positions = <18 33>;
+        };
+
+        equals {
+            bindings = <&kp LS(N0)>;
+            key-positions = <17 32>;
+        };
+
+        euro {
+            bindings = <&kp LS(N4)>;
+            key-positions = <4 17>;
+        };
+
+        dollar {
+            bindings = <&kp LA(N4)>;
+            key-positions = <3 16>;
+        };
+
+        backslash {
+            bindings = <&kp LS(LA(N7))>;
+            key-positions = <16 31>;
+        };
+
+        at {
+            bindings = <&kp LA(N2)>;
+            key-positions = <2 15>;
+        };
+
+        hash {
+            bindings = <&kp LS(N3)>;
+            key-positions = <15 30>;
+        };
     };
 
     keymap {
@@ -150,22 +200,13 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&td0  &kp LEFT_BRACKET  &kp W        &kp F       &kp P            &kp B                               &kp UP                &kp J        &kp L         &kp U       &kp Y        &kp APOSTROPHE  &td0
-&td0  &mt LSHIFT A      &mt LCTRL R  &mt LALT S  &mt LGUI T       &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RGUI N    &mt RALT E  &mt RCTRL I  &mt RSHIFT O    &td0
-&td0  &kp SEMICOLON     &kp X        &kp C       &kp D            &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H         &kp Z       &kp Q        &kp APOSTROPHE  &td0
-                                     &to 0       &lt 3 BACKSPACE  &lt 2 SPACE                                               &lt 4 ENTER  &lt 5 DELETE  &kp RALT
+&td0  &kp LEFT_BRACKET  &kp W        &kp F       &kp P           &kp B                               &kp UP                &kp J        &kp L       &kp U           &kp Y        &kp APOSTROPHE  &td0
+&td0  &mt LSHIFT A      &mt LCTRL R  &mt LALT S  &mt LGUI T      &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RGUI N  &mt RALT E      &mt RCTRL I  &mt RSHIFT O    &td0
+&td0  &kp SEMICOLON     &kp X        &kp C       &kp D           &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H       &kp Z           &kp Q        &kp APOSTROPHE  &td0
+                                     &to 0       &sk LEFT_SHIFT  &lt 1 SPACE                                               &lt 2 ENTER  &trans      &sk LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &trans          &trans  &trans          &kp UP_ARROW    &trans           &trans    &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans            &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME  &kp PAGE_UP
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans            &trans          &trans  &trans          &trans          &trans           &kp END   &kp PAGE_DOWN
-                        &trans  &trans  &trans                                    &trans  &trans          &trans
-            >;
         };
 
         lower_layer {
@@ -210,6 +251,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp LG(LS(Z))  &kp LG(V)       &kp LG(C)       &kp LG(X)        &kp LG(Z)   &trans
+                        &trans  &trans  &trans                                    &trans         &tog 5          &trans
             >;
         };
     };
