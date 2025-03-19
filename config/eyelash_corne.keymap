@@ -142,6 +142,36 @@
             bindings = <&kp LA(N9)>;
             key-positions = <36 37>;
         };
+
+        plus {
+            bindings = <&kp MINUS>;
+            key-positions = <8 23>;
+        };
+
+        minus {
+            bindings = <&kp SLASH>;
+            key-positions = <23 37>;
+        };
+
+        asterisk {
+            bindings = <&kp LS(APOSTROPHE)>;
+            key-positions = <9 24>;
+        };
+
+        forward_slash {
+            bindings = <&kp LS(N7)>;
+            key-positions = <24 38>;
+        };
+
+        ampersand {
+            bindings = <&kp LS(NUMBER_6)>;
+            key-positions = <10 25>;
+        };
+
+        pipe {
+            bindings = <&kp LA(N7)>;
+            key-positions = <25 39>;
+        };
     };
 
     keymap {
