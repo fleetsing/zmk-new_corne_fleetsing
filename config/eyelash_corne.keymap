@@ -50,16 +50,40 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Comma {
+            bindings = <&kp COMMA>;
+            key-positions = <15 16>;
+        };
+
+        Period {
+            bindings = <&kp PERIOD>;
+            key-positions = <24 25>;
+        };
+
+        Semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <2 3>;
+        };
+
+        Colon {
+            bindings = <&kp COLON>;
+            key-positions = <9 10>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE  &kp Q         &kp W        &kp F       &kp P       &kp B                               &kp UP                &kp J        &kp L       &kp U       &kp Y        &kp BACKSLASH  &kp LEFT_BRACKET
-&kp SEMI    &mt LSHIFT A  &mt LCTRL R  &mt LALT S  &mt LGUI T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHIFT O   &kp SQT
-&sk LSHFT   &kp Z         &kp X        &kp C       &kp D       &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H       &kp COMMA   &kp DOT      &kp FSLH       &sk RSHIFT
-                                       &kp LGUI    &mo 2       &lt 3 SPACE                                               &lt 3 ENTER  &mo 1       &kp RALT
+&td0  &td0           &kp W        &kp F       &kp P       &kp B                               &kp UP                &kp J        &kp L       &kp U       &kp Y        &td0            &td0
+&td0  &mt LSHIFT A   &mt LCTRL R  &mt LALT S  &mt LGUI T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHIFT O    &td0
+&td0  &kp SEMICOLON  &kp X        &kp C       &kp D       &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H       &kp Z       &kp Q        &kp APOSTROPHE  &td0
+                                  &kp LGUI    &mo 2       &lt 3 SPACE                                               &lt 3 ENTER  &mo 1       &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
