@@ -192,6 +192,16 @@
             bindings = <&kp LS(N3)>;
             key-positions = <15 30>;
         };
+
+        less_than {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <14 15>;
+        };
+
+        greater_than {
+            bindings = <&kp LS(BACKSLASH)>;
+            key-positions = <25 26>;
+        };
     };
 
     keymap {
