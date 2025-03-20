@@ -210,10 +210,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&td0  &kp LEFT_BRACKET  &kp W        &kp F       &kp P           &kp B                               &kp UP                &kp J        &kp L       &kp U       &kp Y        &kp APOSTROPHE  &td0
-&td0  &mt LSHIFT A      &mt LCTRL R  &mt LALT S  &mt LGUI T      &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHIFT O    &td0
-&td0  &kp SEMICOLON     &kp X        &kp C       &kp D           &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H       &kp Z       &kp Q        &kp APOSTROPHE  &td0
-                                     &mo 2       &sk LEFT_SHIFT  &lt 1 SPACE                                               &lt 3 ENTER  &trans      &mo 4
+&td0        &kp LEFT_BRACKET  &kp W        &kp F       &kp P           &kp B                               &kp UP                &kp J        &kp L       &kp U       &kp Y        &kp APOSTROPHE  &td0
+&kp ESCAPE  &mt LSHIFT A      &mt LCTRL R  &mt LALT S  &mt LGUI T      &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHIFT O    &td0
+&mo 9       &kp SEMICOLON     &kp X        &kp C       &kp D           &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H       &kp Z       &kp Q        &kp APOSTROPHE  &mo 9
+                                           &mo 7       &sk LEFT_SHIFT  &lt 5 SPACE                                               &lt 3 ENTER  &trans      &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -295,6 +295,24 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+        };
+
+        RGB {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        BLE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
