@@ -28,12 +28,6 @@
 
 / {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -308,6 +302,18 @@
             key-positions = <2 15>;
             layers = <4 6>;
         };
+
+        apostrophe {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <10 11>;
+            layers = <0 2 4 6>;
+        };
+
+        quotation {
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <1 2>;
+            layers = <0 2 4 6>;
+        };
     };
 
     keymap {
@@ -316,13 +322,13 @@
         mac_base_layer {
             display-name = "QWERTY";
             bindings = <
-&mo 9           &kp LEFT_BRACKET  &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp APOSTROPHE  &mo 8
+&mo 9           &kp LEFT_BRACKET  &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp EQUAL       &mo 8
 &kp ESCAPE      &mt LSHIFT A      &mt LCTRL R  &mt LALT S  &mt LGUI T       &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RGUI N    &mt RALT E  &mt RCTRL I  &mt RSHIFT O    &to 0
 &sk LEFT_SHIFT  &kp SEMICOLON     &kp X        &kp C       &kp D            &kp V        &none              &kp DOWN             &kp K        &kp H         &kp Z       &kp Q        &kp APOSTROPHE  &sk RIGHT_SHIFT
                                                &sl 3       &lt 2 BACKSPACE  &lt 1 SPACE                                          &lt 1 ENTER  &lt 2 DELETE  &sl 3
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
             label = "MacOS";
         };
 
@@ -420,6 +426,7 @@
             >;
 
             label = "Backlight";
+            sensor-bindings = <&rgb_encoder>;
         };
 
         bluetooth_layer {
