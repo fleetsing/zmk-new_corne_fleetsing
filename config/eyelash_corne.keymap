@@ -222,10 +222,10 @@
 
         mac_navigation_layer {
             bindings = <
-&none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                            &mmv MOVE_UP                     &kp SCROLLLOCK   &none               &kp PAGE_UP              &none          &none                   &none
-&kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none            &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_GUI HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RCTRL END  &mt RIGHT_SHIFT INSERT  &tog 1
-&none       &none  &none           &none           &none            &none   &none                    &mmv MOVE_DOWN                   &kp PAUSE_BREAK  &none               &none                    &none          &none                   &none
-                                   &none           &none            &tog 1                                                            &kp ENTER        &none               &none
+&none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                           &mmv MOVE_UP                     &kp SCROLLLOCK   &none               &kp PAGE_UP              &none          &none                   &none
+&kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_GUI HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RCTRL END  &mt RIGHT_SHIFT INSERT  &to 0
+&none       &none  &none           &none           &none            &none  &none                    &mmv MOVE_DOWN                   &kp PAUSE_BREAK  &none               &none                    &none          &none                   &none
+                                   &none           &none            &to 1                                                            &kp ENTER        &none               &none
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
@@ -234,10 +234,10 @@
 
         mac_numbers_layer {
             bindings = <
-&none  &none           &none             &none         &none         &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
-&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &tog 2
-&none  &none           &none             &none         &none         &none      &kp K_MUTE                    &kp C_PLAY_PAUSE              &none      &kp NUMBER_1  &kp N2  &kp N3  &none   &none
-                                         &none         &none         &kp SPACE                                                              &kp ENTER  &tog 2        &none
+&none       &none           &none             &none         &none         &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
+&kp ESCAPE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &to 0
+&none       &none           &none             &none         &none         &none      &kp K_MUTE                    &kp C_PLAY_PAUSE              &none      &kp NUMBER_1  &kp N2  &kp N3  &none   &none
+                                              &none         &none         &kp SPACE                                                              &kp ENTER  &to 2         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -247,9 +247,9 @@
         mac_functions_layer {
             bindings = <
 &none  &kp F13             &kp F14               &kp F15           &kp F16           &none                  &none         &none  &kp F7            &kp F8            &kp F9                &kp F12              &none
-&none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &none           &none  &none  &none  &none  &mt RIGHT_GUI F4  &mt RIGHT_ALT F5  &mt RIGHT_CONTROL F6  &mt RIGHT_SHIFT F11  &tog 3
+&none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &none           &none  &none  &none  &none  &mt RIGHT_GUI F4  &mt RIGHT_ALT F5  &mt RIGHT_CONTROL F6  &mt RIGHT_SHIFT F11  &to 0
 &none  &kp F21             &kp F22               &kp F23           &kp F24           &none  &none           &none         &none  &kp F1            &kp F2            &kp F3                &kp F10              &none
-                                                 &tog 3            &none             &none                                &none  &none             &tog 3
+                                                 &to 3             &none             &none                                &none  &none             &to 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
