@@ -378,7 +378,7 @@
                                              &sl 7       &lt 6 BACKSPACE     &lt 5 SPACE                                          &lt 5 ENTER  &lt 6 DELETE         &sl 7
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         pc_navigation_layer {
