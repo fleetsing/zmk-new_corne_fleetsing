@@ -322,10 +322,10 @@
         mac_base_layer {
             display-name = "QWERTY";
             bindings = <
-&mo 9           &kp LEFT_BRACKET  &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp EQUAL       &mo 8
-&kp ESCAPE      &mt LSHIFT A      &mt LCTRL R  &mt LALT S  &mt LGUI T       &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RGUI N    &mt RALT E  &mt RCTRL I  &mt RSHIFT O    &to 0
-&sk LEFT_SHIFT  &kp SEMICOLON     &kp X        &kp C       &kp D            &kp V        &none              &kp DOWN             &kp K        &kp H         &kp Z       &kp Q        &kp APOSTROPHE  &sk RIGHT_SHIFT
-                                               &sl 3       &lt 2 BACKSPACE  &lt 1 SPACE                                          &lt 1 ENTER  &lt 2 DELETE  &sl 3
+&mo 9           &kp EQUAL      &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp LEFT_BRACKET  &mo 8
+&kp ESCAPE      &mt LSHIFT A   &mt LCTRL R  &mt LALT S  &mt LGUI T       &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RGUI N    &mt RALT E  &mt RCTRL I  &mt RSHIFT O      &to 0
+&sk LEFT_SHIFT  &kp SEMICOLON  &kp X        &kp C       &kp D            &kp V        &none              &kp DOWN             &kp K        &kp H         &kp Z       &kp Q        &kp APOSTROPHE    &sk RIGHT_SHIFT
+                                            &sl 3       &lt 2 BACKSPACE  &lt 1 SPACE                                          &lt 1 ENTER  &lt 2 DELETE  &sl 3
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -372,10 +372,10 @@
             label = "PC";
             display-name = "PC";
             bindings = <
-&mo 9           &kp LEFT_BRACKET  &kp W        &kp F       &kp P               &kp B                           &kp UP               &kp J        &kp L                &kp U       &kp Y            &kp APOSTROPHE  &mo 8
-&kp ESCAPE      &mt LEFT_GUI A    &mt LCTRL R  &mt LALT S  &mt LEFT_CONTROL T  &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RIGHT_CONTROL N  &mt RALT E  &mt RIGHT_GUI I  &mt RSHIFT O    &to 4
-&sk LEFT_SHIFT  &kp SEMICOLON     &kp X        &kp C       &kp D               &kp V        &none              &kp DOWN             &kp K        &kp H                &kp Z       &kp Q            &kp APOSTROPHE  &sk RIGHT_SHIFT
-                                               &sl 7       &lt 6 BACKSPACE     &lt 5 SPACE                                          &lt 5 ENTER  &lt 6 DELETE         &sl 7
+&mo 9           &kp EQUAL       &kp W        &kp F       &kp P               &kp B                           &kp UP               &kp J        &kp L                &kp U       &kp Y            &kp LEFT_BRACKET  &mo 8
+&kp ESCAPE      &mt LEFT_GUI A  &mt LCTRL R  &mt LALT S  &mt LEFT_CONTROL T  &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RIGHT_CONTROL N  &mt RALT E  &mt RIGHT_GUI I  &mt RSHIFT O      &to 4
+&sk LEFT_SHIFT  &kp SEMICOLON   &kp X        &kp C       &kp D               &kp V        &none              &kp DOWN             &kp K        &kp H                &kp Z       &kp Q            &kp APOSTROPHE    &sk RIGHT_SHIFT
+                                             &sl 7       &lt 6 BACKSPACE     &lt 5 SPACE                                          &lt 5 ENTER  &lt 6 DELETE         &sl 7
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
