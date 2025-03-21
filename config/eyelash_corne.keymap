@@ -56,151 +56,181 @@
         comma {
             bindings = <&kp COMMA>;
             key-positions = <15 16>;
+            layers = <0 2 4 6>;
         };
 
         period {
             bindings = <&kp PERIOD>;
             key-positions = <24 25>;
+            layers = <0 2 4 6>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <2 3>;
+            layers = <0 2 4 6>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <9 10>;
+            layers = <0 2 4 6>;
         };
 
         question_mark {
             bindings = <&kp LS(MINUS)>;
             key-positions = <30 31>;
+            layers = <0 2 4 6>;
         };
 
         exclamation_point {
             bindings = <&kp LS(NUMBER_1)>;
             key-positions = <38 39>;
+            layers = <0 2 4 6>;
         };
 
-        left_brace {
+        left_brace_mac {
             bindings = <&kp LA(LS(N8))>;
             key-positions = <4 3>;
+            layers = <0 2>;
         };
 
-        right_brace {
+        right_brace_mac {
             bindings = <&kp LS(LA(N9))>;
             key-positions = <8 9>;
+            layers = <0 2>;
         };
 
-        left_parenthesis {
+        left_parenthesis_mac {
             bindings = <&kp LS(N8)>;
             key-positions = <17 16>;
+            layers = <0 2 4 6>;
         };
 
-        right_parenthesis {
+        right_parenthesis_mac {
             bindings = <&kp LS(N9)>;
             key-positions = <23 24>;
+            layers = <0 2 4 6>;
         };
 
-        left_bracket {
+        left_bracket_mac {
             bindings = <&kp LA(N8)>;
             key-positions = <32 31>;
+            layers = <0 2>;
         };
 
-        right_bracket {
+        right_bracket_mac {
             bindings = <&kp LA(N9)>;
             key-positions = <37 38>;
+            layers = <0 2>;
         };
 
         plus {
             bindings = <&kp MINUS>;
             key-positions = <8 23>;
+            layers = <0 2 4 6>;
         };
 
         minus {
             bindings = <&kp SLASH>;
             key-positions = <23 37>;
+            layers = <0 2 4 6>;
         };
 
         asterisk {
             bindings = <&kp LS(APOSTROPHE)>;
             key-positions = <9 24>;
+            layers = <0 2 4 6>;
         };
 
         forward_slash {
             bindings = <&kp LS(N7)>;
             key-positions = <24 38>;
+            layers = <0 2 4 6>;
         };
 
         ampersand {
             bindings = <&kp LS(NUMBER_6)>;
             key-positions = <10 25>;
+            layers = <0 2 4 6>;
         };
 
-        pipe {
+        pipe_mac {
             bindings = <&kp LA(N7)>;
             key-positions = <25 39>;
+            layers = <0 2>;
         };
 
-        caret {
+        caret_mac {
             bindings = <&kp LS(LA(RIGHT_BRACKET))>;
             key-positions = <7 22>;
+            layers = <0 2>;
         };
 
         underscore {
             bindings = <&kp LS(SLASH)>;
             key-positions = <22 36>;
+            layers = <0 2 4 6>;
         };
 
         percent {
             bindings = <&kp LS(N5)>;
             key-positions = <5 18>;
+            layers = <0 2 4 6>;
         };
 
-        tilde {
+        tilde_mac {
             bindings = <&kp LA(RIGHT_BRACKET)>;
             key-positions = <18 33>;
+            layers = <0 2>;
         };
 
         equals {
             bindings = <&kp LS(N0)>;
             key-positions = <17 32>;
+            layers = <0 2 4 6>;
         };
 
-        euro {
+        euro_mac {
             bindings = <&kp LS(N4)>;
             key-positions = <4 17>;
+            layers = <0 2>;
         };
 
-        dollar {
+        dollar_mac {
             bindings = <&kp LA(N4)>;
             key-positions = <3 16>;
+            layers = <0 2>;
         };
 
-        backslash {
+        backslash_mac {
             bindings = <&kp LS(LA(N7))>;
             key-positions = <16 31>;
+            layers = <0 2>;
         };
 
-        at {
+        at_mac {
             bindings = <&kp LA(N2)>;
             key-positions = <2 15>;
+            layers = <0 2>;
         };
 
         hash {
             bindings = <&kp LS(N3)>;
             key-positions = <15 30>;
+            layers = <0 2 4 6>;
         };
 
         less_than {
             bindings = <&kp BACKSLASH>;
             key-positions = <14 15>;
+            layers = <0 2 4 6>;
         };
 
         greater_than {
             bindings = <&kp LS(BACKSLASH)>;
             key-positions = <25 26>;
+            layers = <0 2 4 6>;
         };
 
         tab {
