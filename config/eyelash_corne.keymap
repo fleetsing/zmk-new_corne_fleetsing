@@ -207,7 +207,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        mac_base_layer {
             display-name = "QWERTY";
             bindings = <
 &mo 5           &kp LEFT_BRACKET  &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp APOSTROPHE  &mo 4
@@ -217,9 +217,10 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            label = "MacOS";
         };
 
-        NAV {
+        mac_navigation_layer {
             bindings = <
 &none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                            &mmv MOVE_UP                     &kp SCROLLLOCK   &none               &kp PAGE_UP              &none          &none                   &none
 &kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none            &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_GUI HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RCTRL END  &mt RIGHT_SHIFT INSERT  &tog 1
@@ -228,9 +229,10 @@
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            label = "Navigation";
         };
 
-        NUM {
+        mac_numbers_layer {
             bindings = <
 &none  &none           &none             &none         &none         &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
 &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &tog 2
@@ -239,33 +241,41 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            label = "Numbers";
         };
 
-        FUN {
+        mac_functions_layer {
             bindings = <
-&none  &kp F13             &kp F14               &kp F15           &kp F16           &none                  &none         &none  &kp F7  &kp F8  &kp F9  &kp F12  &none
-&none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &none           &none  &none  &none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &tog 3
-&none  &kp F21             &kp F22               &kp F23           &kp F24           &none  &none           &none         &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                                 &tog 3            &none             &none                                &none  &none   &tog 3
+&none  &kp F13             &kp F14               &kp F15           &kp F16           &none                  &none         &none  &kp F7            &kp F8            &kp F9                &kp F12              &none
+&none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &none           &none  &none  &none  &none  &mt RIGHT_GUI F4  &mt RIGHT_ALT F5  &mt RIGHT_CONTROL F6  &mt RIGHT_SHIFT F11  &tog 3
+&none  &kp F21             &kp F22               &kp F23           &kp F24           &none  &none           &none         &none  &kp F1            &kp F2            &kp F3                &kp F10              &none
+                                                 &tog 3            &none             &none                                &none  &none             &tog 3
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            label = "Functions";
         };
 
-        RGB {
+        backlight_layer {
             bindings = <
 &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF                  &none         &none  &none  &none  &none  &none  &none
 &none  &none            &none            &none            &rgb_ug RGB_TOG  &none                     &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &none           &none         &none  &none  &none  &none  &none  &none
                                          &none            &none            &none                                          &none  &none  &none
             >;
+
+            label = "Backlight";
         };
 
-        BLE {
+        bluetooth_layer {
             bindings = <
 &none  &none  &none  &none  &none  &bt BT_CLR                      &none         &bt BT_NXT  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
 &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none       &out OUT_BLE   &out OUT_USB   &none          &none          &none
 &none  &none  &none  &none  &none  &bt BT_CLR_ALL  &none           &none         &bt BT_PRV  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
                      &none  &none  &none                                         &none       &none          &none
             >;
+
+            label = "Bluetooth";
         };
     };
 };
