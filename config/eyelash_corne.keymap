@@ -277,5 +277,54 @@
 
             label = "Bluetooth";
         };
+
+        pc_base_layer {
+            label = "PC";
+            display-name = "PC";
+            bindings = <
+&mo 5           &kp LEFT_BRACKET  &kp W        &kp F       &kp P               &kp B                           &kp UP               &kp J        &kp L                &kp U       &kp Y            &kp APOSTROPHE  &mo 4
+&kp ESCAPE      &mt LEFT_GUI A    &mt LCTRL R  &mt LALT S  &mt LEFT_CONTROL T  &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RIGHT_CONTROL N  &mt RALT E  &mt RIGHT_GUI I  &mt RSHIFT O    &to 0
+&sk LEFT_SHIFT  &kp SEMICOLON     &kp X        &kp C       &kp D               &kp V        &none              &kp DOWN             &kp K        &kp H                &kp Z       &kp Q            &kp APOSTROPHE  &sk RIGHT_SHIFT
+                                               &sl 3       &lt 2 BACKSPACE     &lt 1 SPACE                                          &lt 1 ENTER  &lt 2 DELETE         &sl 3
+            >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+        };
+
+        pc_navigation_layer {
+            label = "Navigation ";
+            bindings = <
+&none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                           &mmv MOVE_UP                     &kp SCROLLLOCK   &none                   &kp PAGE_UP              &none              &none                   &none
+&kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_CONTROL HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &mt RIGHT_SHIFT INSERT  &to 0
+&none       &none  &none           &none           &none            &none  &none                    &mmv MOVE_DOWN                   &kp PAUSE_BREAK  &none                   &none                    &none              &none                   &none
+                                   &none           &none            &to 1                                                            &kp ENTER        &none                   &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+        };
+
+        pc_numbers_layer {
+            label = "Numbers ";
+            bindings = <
+&none       &none           &none         &none         &none             &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
+&kp ESCAPE  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &to 0
+&none       &none           &none         &none         &none             &none      &kp K_MUTE                    &kp C_PLAY_PAUSE              &none      &kp NUMBER_1  &kp N2  &kp N3  &none   &none
+                                          &none         &none             &kp SPACE                                                              &kp ENTER  &to 2         &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        pc_functions_layer {
+            label = "Functions ";
+            bindings = <
+&none  &kp F13             &kp F14           &kp F15           &kp F16               &none                  &none         &none  &kp F7                &kp F8            &kp F9            &kp F12              &none
+&none  &mt LEFT_SHIFT F17  &mt LEFT_GUI F18  &mt LEFT_ALT F19  &mt LEFT_CONTROL F20  &none           &none  &none  &none  &none  &mt RIGHT_CONTROL F4  &mt RIGHT_ALT F5  &mt RIGHT_GUI F6  &mt RIGHT_SHIFT F11  &to 0
+&none  &kp F21             &kp F22           &kp F23           &kp F24               &none  &none           &none         &none  &kp F1                &kp F2            &kp F3            &kp F10              &none
+                                             &to 3             &none                 &none                                &none  &none                 &to 3
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+        };
     };
 };
