@@ -74,181 +74,181 @@
         comma {
             bindings = <&kp COMMA>;
             key-positions = <15 16>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         period {
             bindings = <&kp PERIOD>;
             key-positions = <24 25>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <2 3>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <9 10>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         question_mark {
             bindings = <&kp LS(MINUS)>;
             key-positions = <30 31>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         exclamation_point {
             bindings = <&kp LS(NUMBER_1)>;
             key-positions = <38 39>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         left_brace_mac {
             bindings = <&kp LA(LS(N8))>;
             key-positions = <4 3>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         right_brace_mac {
             bindings = <&kp LS(LA(N9))>;
             key-positions = <8 9>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         left_parenthesis {
             bindings = <&kp LS(N8)>;
             key-positions = <17 16>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         right_parenthesis {
             bindings = <&kp LS(N9)>;
             key-positions = <23 24>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         left_bracket_mac {
             bindings = <&kp LA(N8)>;
             key-positions = <32 31>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         right_bracket_mac {
             bindings = <&kp LA(N9)>;
             key-positions = <37 38>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         plus {
             bindings = <&kp MINUS>;
             key-positions = <8 23>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         minus {
             bindings = <&kp SLASH>;
             key-positions = <23 37>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         asterisk {
             bindings = <&kp LS(APOSTROPHE)>;
             key-positions = <9 24>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         forward_slash {
             bindings = <&kp LS(N7)>;
             key-positions = <24 38>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         ampersand {
             bindings = <&kp LS(NUMBER_6)>;
             key-positions = <10 25>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         pipe_mac {
             bindings = <&kp LA(N7)>;
             key-positions = <25 39>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         caret_mac {
             bindings = <&kp LS(LA(RIGHT_BRACKET))>;
             key-positions = <7 22>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         underscore {
             bindings = <&kp LS(SLASH)>;
             key-positions = <22 36>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         percent {
             bindings = <&kp LS(N5)>;
             key-positions = <5 18>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         tilde_mac {
             bindings = <&kp LA(RIGHT_BRACKET)>;
             key-positions = <18 33>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         equals {
             bindings = <&kp LS(N0)>;
             key-positions = <17 32>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         euro_mac {
             bindings = <&kp LS(N4)>;
             key-positions = <4 17>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         dollar_mac {
             bindings = <&kp LA(N4)>;
             key-positions = <3 16>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         backslash_mac {
             bindings = <&kp LS(LA(N7))>;
             key-positions = <16 31>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         at_mac {
             bindings = <&kp LA(N2)>;
             key-positions = <2 15>;
-            layers = <0 2>;
+            layers = <0 4>;
         };
 
         hash {
             bindings = <&kp LS(N3)>;
             key-positions = <15 30>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         less_than {
             bindings = <&kp BACKSLASH>;
             key-positions = <14 15>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         greater_than {
             bindings = <&kp LS(BACKSLASH)>;
             key-positions = <25 26>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         tab {
@@ -264,79 +264,79 @@
         left_brace_pc {
             bindings = <&kp LA(LC(N7))>;
             key-positions = <4 3>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         right_brace_pc {
             bindings = <&kp LA(LC(N0))>;
             key-positions = <8 9>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         left_bracket_pc {
             bindings = <&kp LA(LC(N8))>;
             key-positions = <32 31>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         right_bracket_pc {
             bindings = <&kp LA(LC(N9))>;
             key-positions = <37 38>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         pipe_pc {
             bindings = <&kp LA(LC(BACKSLASH))>;
             key-positions = <25 39>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         caret_pc {
             bindings = <&kp LS(RIGHT_BRACKET)>;
             key-positions = <7 22>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         tilde_pc {
             bindings = <&kp LA(LS(RIGHT_BRACKET))>;
             key-positions = <18 33>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         euro_pc {
             bindings = <&kp LA(LC(E))>;
             key-positions = <4 17>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         dollar_pc {
             bindings = <&kp LA(LS(NUMBER_4))>;
             key-positions = <3 16>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         backslash_pc {
             bindings = <&kp LA(LC(MINUS))>;
             key-positions = <16 31>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         at_pc {
             bindings = <&kp LA(LC(NUMBER_2))>;
             key-positions = <2 15>;
-            layers = <4 6>;
+            layers = <1 5>;
         };
 
         apostrophe {
             bindings = <&kp APOSTROPHE>;
             key-positions = <10 11>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
 
         quotation {
             bindings = <&kp LS(NUMBER_2)>;
             key-positions = <1 2>;
-            layers = <0 2 4 6>;
+            layers = <0 4 1 5>;
         };
     };
 
@@ -349,47 +349,11 @@
 &mo 9           &kp EQUAL      &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp LEFT_BRACKET  &mo 8
 &kp ESCAPE      &mt LSHIFT A   &mt LCTRL R  &mt LALT S  &mt LGUI T       &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RGUI N    &mt RALT E  &mt RCTRL I  &mt RSHIFT O      &to 0
 &sk LEFT_SHIFT  &kp SEMICOLON  &kp X        &kp C       &kp D            &kp V        &none              &kp DOWN             &kp K        &kp H         &kp Z       &kp Q        &kp APOSTROPHE    &sk RIGHT_SHIFT
-                                            &sl 3       &lt 2 BACKSPACE  &lt 1 SPACE                                          &lt 1 ENTER  &lt 2 DELETE  &sl 3
+                                            &sl 6       &lt 4 BACKSPACE  &lt 2 SPACE                                          &lt 2 ENTER  &lt 4 DELETE  &sl 6
             >;
 
             sensor-bindings = <&scroll_encoder>;
             label = "MacOS";
-        };
-
-        mac_navigation_layer {
-            bindings = <
-&none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                           &mmv MOVE_UP                     &kp SCROLLLOCK   &none               &kp PAGE_UP              &none          &none                   &none
-&kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_GUI HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RCTRL END  &mt RIGHT_SHIFT INSERT  &to 0
-&none       &none  &none           &none           &none            &none  &none                    &mmv MOVE_DOWN                   &kp PAUSE_BREAK  &none               &none                    &none          &none                   &none
-                                   &none           &none            &to 1                                                            &kp ENTER        &none               &none
-            >;
-
-            sensor-bindings = <&left_right_encoder>;
-            label = "Navigation";
-        };
-
-        mac_numbers_layer {
-            bindings = <
-&none       &none           &none             &none         &none         &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
-&kp ESCAPE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &to 0
-&none       &none           &none             &none         &none         &none      &kp K_MUTE                    &kp C_PLAY_PAUSE              &none      &kp NUMBER_1  &kp N2  &kp N3  &none   &none
-                                              &none         &none         &kp SPACE                                                              &kp ENTER  &to 2         &none
-            >;
-
-            sensor-bindings = <&volume_encoder>;
-            label = "Numbers";
-        };
-
-        mac_functions_layer {
-            bindings = <
-&none  &kp F13             &kp F14               &kp F15           &kp F16           &none                  &none         &none  &kp F7            &kp F8            &kp F9                &kp F12              &none
-&none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &to 4           &none  &none  &none  &none  &mt RIGHT_GUI F4  &mt RIGHT_ALT F5  &mt RIGHT_CONTROL F6  &mt RIGHT_SHIFT F11  &to 0
-&none  &kp F21             &kp F22               &kp F23           &kp F24           &none  &none           &none         &none  &kp F1            &kp F2            &kp F3                &kp F10              &none
-                                                 &to 3             &none             &none                                &none  &none             &to 3
-            >;
-
-            sensor-bindings = <&display_encoder>;
-            label = "Functions";
         };
 
         pc_base_layer {
@@ -397,43 +361,79 @@
             display-name = "PC";
             bindings = <
 &mo 9           &kp EQUAL       &kp W        &kp F       &kp P               &kp B                           &kp UP               &kp J        &kp L                &kp U       &kp Y            &kp LEFT_BRACKET  &mo 8
-&kp ESCAPE      &mt LEFT_GUI A  &mt LCTRL R  &mt LALT S  &mt LEFT_CONTROL T  &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RIGHT_CONTROL N  &mt RALT E  &mt RIGHT_GUI I  &mt RSHIFT O      &to 4
+&kp ESCAPE      &mt LEFT_GUI A  &mt LCTRL R  &mt LALT S  &mt LEFT_CONTROL T  &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RIGHT_CONTROL N  &mt RALT E  &mt RIGHT_GUI I  &mt RSHIFT O      &to 1
 &sk LEFT_SHIFT  &kp SEMICOLON   &kp X        &kp C       &kp D               &kp V        &none              &kp DOWN             &kp K        &kp H                &kp Z       &kp Q            &kp APOSTROPHE    &sk RIGHT_SHIFT
-                                             &sl 7       &lt 6 BACKSPACE     &lt 5 SPACE                                          &lt 5 ENTER  &lt 6 DELETE         &sl 7
+                                             &sl 7       &lt 5 BACKSPACE     &lt 3 SPACE                                          &lt 3 ENTER  &lt 5 DELETE         &sl 7
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        mac_navigation_layer {
+            bindings = <
+&none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                           &mmv MOVE_UP                     &kp SCROLLLOCK   &none               &kp PAGE_UP              &none          &none                   &none
+&kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_GUI HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RCTRL END  &mt RIGHT_SHIFT INSERT  &to 0
+&none       &none  &none           &none           &none            &none  &none                    &mmv MOVE_DOWN                   &kp PAUSE_BREAK  &none               &none                    &none          &none                   &none
+                                   &none           &none            &to 2                                                            &kp ENTER        &none               &none
+            >;
+
+            sensor-bindings = <&left_right_encoder>;
+            label = "Navigation";
         };
 
         pc_navigation_layer {
             label = "Navigation ";
             bindings = <
 &none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                           &mmv MOVE_UP                     &kp SCROLLLOCK   &none                   &kp PAGE_UP              &none              &none                   &none
-&kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_CONTROL HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &mt RIGHT_SHIFT INSERT  &to 4
+&kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_CONTROL HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &mt RIGHT_SHIFT INSERT  &to 1
 &none       &none  &none           &none           &none            &none  &none                    &mmv MOVE_DOWN                   &kp PAUSE_BREAK  &none                   &none                    &none              &none                   &none
-                                   &none           &none            &to 5                                                            &kp ENTER        &none                   &none
+                                   &none           &none            &to 3                                                            &kp ENTER        &none                   &none
             >;
 
             sensor-bindings = <&left_right_encoder>;
+        };
+
+        mac_numbers_layer {
+            bindings = <
+&none       &none           &none             &none         &none         &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
+&kp ESCAPE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &to 0
+&none       &none           &none             &none         &none         &none      &kp K_MUTE                    &kp C_PLAY_PAUSE              &none      &kp NUMBER_1  &kp N2  &kp N3  &none   &none
+                                              &none         &none         &kp SPACE                                                              &kp ENTER  &to 4         &none
+            >;
+
+            sensor-bindings = <&volume_encoder>;
+            label = "Numbers";
         };
 
         pc_numbers_layer {
             label = "Numbers ";
             bindings = <
 &none       &none           &none         &none         &none             &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
-&kp ESCAPE  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &to 4
+&kp ESCAPE  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &to 1
 &none       &none           &none         &none         &none             &none      &kp K_MUTE                    &kp C_PLAY_PAUSE              &none      &kp NUMBER_1  &kp N2  &kp N3  &none   &none
-                                          &none         &none             &kp SPACE                                                              &kp ENTER  &to 6         &none
+                                          &none         &none             &kp SPACE                                                              &kp ENTER  &to 5         &none
             >;
 
             sensor-bindings = <&volume_encoder>;
+        };
+
+        mac_functions_layer {
+            bindings = <
+&none  &kp F13             &kp F14               &kp F15           &kp F16           &none                  &none         &none  &kp F7            &kp F8            &kp F9                &kp F12              &none
+&none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &to 1           &none  &none  &none  &none  &mt RIGHT_GUI F4  &mt RIGHT_ALT F5  &mt RIGHT_CONTROL F6  &mt RIGHT_SHIFT F11  &to 0
+&none  &kp F21             &kp F22               &kp F23           &kp F24           &none  &none           &none         &none  &kp F1            &kp F2            &kp F3                &kp F10              &none
+                                                 &to 6             &none             &none                                &none  &none             &to 6
+            >;
+
+            sensor-bindings = <&display_encoder>;
+            label = "Functions";
         };
 
         pc_functions_layer {
             label = "Functions ";
             bindings = <
 &none  &kp F13             &kp F14           &kp F15           &kp F16               &none                  &none         &none  &kp F7                &kp F8            &kp F9            &kp F12              &none
-&none  &mt LEFT_SHIFT F17  &mt LEFT_GUI F18  &mt LEFT_ALT F19  &mt LEFT_CONTROL F20  &none           &none  &none  &none  &to 0  &mt RIGHT_CONTROL F4  &mt RIGHT_ALT F5  &mt RIGHT_GUI F6  &mt RIGHT_SHIFT F11  &to 4
+&none  &mt LEFT_SHIFT F17  &mt LEFT_GUI F18  &mt LEFT_ALT F19  &mt LEFT_CONTROL F20  &none           &none  &none  &none  &to 0  &mt RIGHT_CONTROL F4  &mt RIGHT_ALT F5  &mt RIGHT_GUI F6  &mt RIGHT_SHIFT F11  &to 1
 &none  &kp F21             &kp F22           &kp F23           &kp F24               &none  &none           &none         &none  &kp F1                &kp F2            &kp F3            &kp F10              &none
                                              &to 7             &none                 &none                                &none  &none                 &to 7
             >;
