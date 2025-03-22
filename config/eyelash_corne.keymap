@@ -61,6 +61,13 @@
         bindings = <&kp C_BRIGHTNESS_INC>, <&kp C_BRIGHTNESS_DEC>;
     };
 
+    left_right_encoder: left_right_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "Input left or right using encoder";
+        #sensor-binding-cells = <0>;
+        bindings = <&kp RIGHT_ARROW>, <&kp LEFT_ARROW>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -357,7 +364,7 @@
                                    &none           &none            &to 1                                                            &kp ENTER        &none               &none
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&left_right_encoder>;
             label = "Navigation";
         };
 
@@ -369,7 +376,7 @@
                                               &none         &none         &kp SPACE                                                              &kp ENTER  &to 2         &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&volume_encoder>;
             label = "Numbers";
         };
 
@@ -381,7 +388,7 @@
                                                  &to 3             &none             &none                                &none  &none             &to 3
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            sensor-bindings = <&display_encoder>;
             label = "Functions";
         };
 
@@ -407,7 +414,7 @@
                                    &none           &none            &to 5                                                            &kp ENTER        &none                   &none
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&left_right_encoder>;
         };
 
         pc_numbers_layer {
@@ -419,7 +426,7 @@
                                           &none         &none             &kp SPACE                                                              &kp ENTER  &to 6         &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&volume_encoder>;
         };
 
         pc_functions_layer {
@@ -431,7 +438,7 @@
                                              &to 7             &none                 &none                                &none  &none                 &to 7
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            sensor-bindings = <&display_encoder>;
         };
 
         backlight_layer {
