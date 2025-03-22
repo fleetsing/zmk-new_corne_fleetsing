@@ -346,10 +346,10 @@
         base_layer_mac {
             display-name = "QWERTY";
             bindings = <
-&mo 9           &kp EQUAL      &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp LEFT_BRACKET  &mo 8
-&kp ESCAPE      &mt LSHIFT A   &mt LCTRL R  &mt LALT S  &mt LGUI T       &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RGUI N    &mt RALT E  &mt RCTRL I  &mt RSHIFT O      &to 0
-&sk LEFT_SHIFT  &kp SEMICOLON  &kp X        &kp C       &kp D            &kp V        &none              &kp DOWN             &kp K        &kp H         &kp Z       &kp Q        &kp APOSTROPHE    &sk RIGHT_SHIFT
-                                            &sl 6       &lt 4 BACKSPACE  &lt 2 SPACE                                          &lt 2 ENTER  &lt 4 DELETE  &sl 6
+&mo 9           &kp EQUAL      &kp W        &kp F                     &kp P                         &kp B                           &kp UP               &kp J        &kp L                          &kp U                      &kp Y        &kp LEFT_BRACKET  &mo 8
+&kp ESCAPE      &mt LSHIFT A   &mt LCTRL R  &mt LALT S                &mt LGUI T                    &kp G                 &kp LEFT  &none     &kp RIGHT  &kp M        &mt RGUI N                     &mt RALT E                 &mt RCTRL I  &mt RSHIFT O      &to 0
+&sk LEFT_SHIFT  &kp SEMICOLON  &kp X        &mt LA(LC(LEFT_SHIFT)) C  &mt LA(LC(LG(LEFT_SHIFT))) D  &kp V        &none              &kp DOWN             &kp K        &mt RG(RC(RA(RIGHT_SHIFT))) H  &mt RA(RC(RIGHT_SHIFT)) Z  &kp Q        &kp APOSTROPHE    &sk RIGHT_SHIFT
+                                            &sl 6                     &lt 4 BACKSPACE               &lt 2 SPACE                                          &lt 2 ENTER  &lt 4 DELETE                   &sl 6
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -422,7 +422,7 @@
 &none  &kp F13             &kp F14               &kp F15           &kp F16           &none                  &none         &none  &kp F7            &kp F8            &kp F9                &kp F12              &none
 &none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &to 1           &none  &none  &none  &none  &mt RIGHT_GUI F4  &mt RIGHT_ALT F5  &mt RIGHT_CONTROL F6  &mt RIGHT_SHIFT F11  &to 0
 &none  &kp F21             &kp F22               &kp F23           &kp F24           &none  &none           &none         &none  &kp F1            &kp F2            &kp F3                &kp F10              &none
-                                                 &to 6             &none             &none                                &none  &none             &to 6
+                                                 &none             &none             &none                                &none  &none             &none
             >;
 
             sensor-bindings = <&display_encoder>;
@@ -435,7 +435,7 @@
 &none  &kp F13             &kp F14           &kp F15           &kp F16               &none                  &none         &none  &kp F7                &kp F8            &kp F9            &kp F12              &none
 &none  &mt LEFT_SHIFT F17  &mt LEFT_GUI F18  &mt LEFT_ALT F19  &mt LEFT_CONTROL F20  &none           &none  &none  &none  &to 0  &mt RIGHT_CONTROL F4  &mt RIGHT_ALT F5  &mt RIGHT_GUI F6  &mt RIGHT_SHIFT F11  &to 1
 &none  &kp F21             &kp F22           &kp F23           &kp F24               &none  &none           &none         &none  &kp F1                &kp F2            &kp F3            &kp F10              &none
-                                             &to 7             &none                 &none                                &none  &none                 &to 7
+                                             &none             &none                 &none                                &none  &none                 &none
             >;
 
             sensor-bindings = <&display_encoder>;
