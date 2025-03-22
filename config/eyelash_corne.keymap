@@ -34,6 +34,8 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+
+        label = "Change RGB brightness using encoder";
     };
 
     scroll_encoder: scroll_encoder {
@@ -42,6 +44,21 @@
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
         tap-ms = <100>;
+        label = "Scroll using encoder";
+    };
+
+    volume_encoder: volume_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "Change volume using encoder";
+        #sensor-binding-cells = <0>;
+        bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+    };
+
+    display_encoder: display_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "Change display brightness using encoder";
+        #sensor-binding-cells = <0>;
+        bindings = <&kp C_BRIGHTNESS_INC>, <&kp C_BRIGHTNESS_DEC>;
     };
 
     combos {
