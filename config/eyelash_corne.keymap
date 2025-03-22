@@ -343,7 +343,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        mac_base_layer {
+        base_layer_mac {
             display-name = "QWERTY";
             bindings = <
 &mo 9           &kp EQUAL      &kp W        &kp F       &kp P            &kp B                           &kp UP               &kp J        &kp L         &kp U       &kp Y        &kp LEFT_BRACKET  &mo 8
@@ -356,7 +356,7 @@
             label = "MacOS";
         };
 
-        pc_base_layer {
+        base_layer_pc {
             label = "PC";
             display-name = "PC";
             bindings = <
@@ -369,7 +369,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        mac_navigation_layer {
+        navigation_layer_mac {
             bindings = <
 &none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                           &mmv MOVE_UP                     &kp SCROLLLOCK   &none               &kp PAGE_UP              &none          &none                   &none
 &kp ESCAPE  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &kp PRINTSCREEN  &mt RIGHT_GUI HOME  &mt RIGHT_ALT PAGE_DOWN  &mt RCTRL END  &mt RIGHT_SHIFT INSERT  &to 0
@@ -381,7 +381,7 @@
             label = "Navigation";
         };
 
-        pc_navigation_layer {
+        navigation_layer_pc {
             label = "Navigation ";
             bindings = <
 &none       &none  &mkp RCLK       &kp UP_ARROW    &mkp LCLK        &none                           &mmv MOVE_UP                     &kp SCROLLLOCK   &none                   &kp PAGE_UP              &none              &none                   &none
@@ -393,7 +393,7 @@
             sensor-bindings = <&left_right_encoder>;
         };
 
-        mac_numbers_layer {
+        numbers_layer_mac {
             bindings = <
 &none       &none           &none             &none         &none         &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
 &kp ESCAPE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none                    &kp C_PREVIOUS  &none             &kp C_NEXT  &none      &kp N4        &kp N5  &kp N6  &kp N0  &to 0
@@ -405,7 +405,7 @@
             label = "Numbers";
         };
 
-        pc_numbers_layer {
+        numbers_layer_pc {
             label = "Numbers ";
             bindings = <
 &none       &none           &none         &none         &none             &none                                    &none                         &none      &kp N7        &kp N8  &kp N9  &none   &none
@@ -417,7 +417,7 @@
             sensor-bindings = <&volume_encoder>;
         };
 
-        mac_functions_layer {
+        functions_layer_mac {
             bindings = <
 &none  &kp F13             &kp F14               &kp F15           &kp F16           &none                  &none         &none  &kp F7            &kp F8            &kp F9                &kp F12              &none
 &none  &mt LEFT_SHIFT F17  &mt LEFT_CONTROL F18  &mt LEFT_ALT F19  &mt LEFT_GUI F20  &to 1           &none  &none  &none  &none  &mt RIGHT_GUI F4  &mt RIGHT_ALT F5  &mt RIGHT_CONTROL F6  &mt RIGHT_SHIFT F11  &to 0
@@ -429,7 +429,7 @@
             label = "Functions";
         };
 
-        pc_functions_layer {
+        functions_layer_pc {
             label = "Functions ";
             bindings = <
 &none  &kp F13             &kp F14           &kp F15           &kp F16               &none                  &none         &none  &kp F7                &kp F8            &kp F9            &kp F12              &none
